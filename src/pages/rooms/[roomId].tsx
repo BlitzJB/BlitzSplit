@@ -235,9 +235,6 @@ const Payout = () => {
         <h2 className="font-medium text-xl">Balance so far</h2>
         {/* <button className="mt-10 px-4 py-2 bg-green-500 text-white rounded-md">Payout</button> */}
         {
-            JSON.stringify(responsibilities)
-        }
-        {
             invertPayments && Object.keys(invertPayments).map((payerId) => {
                 return (<>
                     <div className="border px-2 py-1">

@@ -20,9 +20,9 @@ const Complete: NextPage = () => {
                     {
                         onSuccess(data, variables, context) {
                             if (!redirect) {
-                                router.push("/");
+                                window.location.href = "/";
                             } else {
-                                router.push(redirect as string);
+                                window.location.href = redirect as string;
                             }
                         },
                         onError(error, variables, context) {
